@@ -1,0 +1,374 @@
+.mainFooter {
+    background-color: #cce7f7; 
+    padding: 8rem 8% 2rem 8%;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #1a1a1a;
+}
+
+.contactSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+    gap: 4rem;
+}
+
+.contactInfo h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.email {
+    display: block;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.phone, .address {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+
+.newsletter {
+    flex-basis: 40%;
+}
+
+.newsletterTitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.inputGroup label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.inputGroup input {
+    background-color: #fdfdfc; 
+    border: 1px solid #1a1a1a;
+    border-radius: 50px;
+    padding: 1rem 1.5rem;
+    outline: none;
+}
+
+.checkboxGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.subscribeBtn {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 1.2rem 4rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribeBtn:hover {
+    background-color: #d94f2b;
+}
+
+
+.linksSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.socials img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.navColumns {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr; 
+    gap: 60px; 
+    width: fit-content;
+    justify-content: center;
+    margin-right: 400px;
+    
+}
+
+.column {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px; 
+    justify-content: center;
+}
+
+.column a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+
+}
+
+.column a:hover {
+    color: #d94f2b; 
+    text-decoration: underline;
+}
+
+
+
+.navLink {
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.navLink:hover {
+    color: #d94f2b;
+    text-decoration: underline;
+}
+
+
+
+
+
+.copyright {
+    font-size: 0.9rem;
+    color: #1a1a1a;
+}
+
+.copyright a {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .mainFooter {
+        padding: 6rem 5% 2rem;
+    }
+
+    .contactSection {
+        gap: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .contactInfo h1 {
+        font-size: 4rem;
+    }
+
+    .email {
+        font-size: 1.45rem;
+    }
+
+    .phone, .address {
+        font-size: 1.2rem;
+    }
+
+    .newsletter {
+        flex-basis: 48%;
+    }
+
+    .linksSection {
+        padding-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .navColumns {
+        gap: 2.5rem;
+        margin-right: 0;
+    }
+
+    .column {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainFooter {
+        padding: 100 1rem 1.5rem;
+        
+    }
+
+    .contactSection {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 4.5rem;
+    }
+
+    .contactInfo,
+    .newsletter {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contactInfo h1 {
+        font-size: 3.6rem;
+        line-height: 1.05;
+        margin-bottom: 1.75rem;
+    }
+
+    .email {
+        font-size: 1.15rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .phone, .address {
+        font-size: 1.05rem;
+        line-height: 1.45;
+        margin-bottom: 0.35rem;
+    }
+
+    .address {
+        margin-top: 1rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .newsletterTitle {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+
+    .inputGroup {
+        text-align: left;
+        margin-bottom: 1.75rem;
+    }
+
+    .inputGroup label {
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .inputGroup input {
+        padding: 0.95rem 1.35rem;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputGroup,
+    .checkboxGroup,
+    .subscribeBtn {
+        width: 100%;
+        max-width: 460px;
+    }
+
+    .checkboxGroup {
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .subscribeBtn {
+        width: 100%;
+        max-width: 460px;
+        padding: 1.1rem 1.5rem;
+    }
+
+    .linksSection {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.75rem;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .socials {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .navColumns {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 100%;
+        max-width: 220px;
+        line-height: 1.5rem;
+    }
+
+    .column {
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .column a,
+    .navLink {
+        font-size: 1.05rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainFooter {
+        padding: 100 0.85rem 1.25rem;
+    }
+
+    .contactInfo h1 {
+        font-size: 2.9rem;
+    }
+
+    .email {
+        font-size: 1rem;
+    }
+
+    .phone, .address {
+        font-size: 0.95rem;
+    }
+
+    .inputGroup input {
+        padding: 0.9rem 1.15rem;
+    }
+
+    .checkboxGroup {
+        gap: 8px;
+        font-size: 0.85rem;
+    }
+
+    .subscribeBtn {
+        max-width: 100%;
+        padding: 1rem 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .column a,
+    .navLink {
+        font-size: 1.05rem;
+        line-height: 1.5rem;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+}

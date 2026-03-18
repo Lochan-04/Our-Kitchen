@@ -1,0 +1,526 @@
+.container {
+
+   
+
+    background-color: #fdfdfc;
+
+    min-height: 35vh;
+
+    font-family: 'Helvetica', sans-serif;
+
+    transition: opacity 1s ease-in-out, visibility 1s;
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+
+
+
+.container.fadeOut {
+
+    opacity: 0 !important;
+
+    pointer-events: none;
+
+}
+
+
+
+.menuSection, .header {
+
+    transition: opacity 1s ease;
+
+}
+
+
+
+.fadeOut .menuSection, .fadeOut .header {
+
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+
+
+.fadeOut {
+
+    opacity: 0;
+
+    pointer-events: none;
+
+}
+
+
+
+.header {
+
+    text-align: center;
+
+    margin-bottom: 8rem;
+
+}
+
+
+
+.header h1 {
+
+    font-size: 4.5rem;
+
+    font-weight: 300;
+
+    margin-bottom: 2rem;
+
+   
+
+}
+
+
+
+.header p{
+
+    font-size: 1.3rem;
+
+}
+
+
+
+
+
+.blobGrid {
+
+    display: grid; 
+
+    grid-template-columns: repeat(4, 1fr); 
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 6rem; 
+
+    margin-top: 5.5rem;
+
+    max-width: 1000px; 
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+
+
+.blob {
+
+    width: 230px; 
+
+    height: 150px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    font-weight: 600;
+
+    font-size: 1.3rem;
+
+    font-weight: normal;
+
+    padding: 30px;
+
+   
+
+}
+
+.blobGreen { background-color: #445943; border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+
+.blobBlue { background-color: #cce7f7; color: #1a1a1a; border-radius: 50% 50% 40% 60% / 60% 40% 50% 50%; }
+
+.blobTan { background-color: #c4b6a6; color: #1a1a1a; border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%; }
+
+.blobRed { background-color: #cf3d10; border-radius: 60% 40% 50% 50% / 40% 60% 50% 40%; }
+
+
+
+
+
+.menuSection {
+
+    max-width: 1500px;
+
+    padding: 0 5%;
+
+    margin-top: 150px;
+
+}
+
+
+
+.mainTitle {
+
+    font-size: 4rem;
+
+    font-weight: 300;
+
+    border-bottom: 1px solid #1a1a1a;
+
+    padding-bottom: 2rem;
+
+    margin-bottom: 3rem;
+
+}
+
+
+
+.mainTitle span {
+
+    font-family: 'Times New Roman', serif;
+
+    font-style: italic;
+
+    font-weight: normal;
+
+}
+
+
+
+.categoryName {
+
+    font-size: 1.7rem;
+
+    letter-spacing: 2px;
+
+    border-bottom: 1px solid #b1b0b0;
+
+    padding-bottom: 1rem;
+
+    margin-top: 4rem;
+
+
+
+}
+
+
+
+.mealRow {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    padding: 1.8rem 0;
+
+    border-bottom: 1px solid #b1b0b0;
+
+}
+
+
+
+.mealTitle {
+
+    font-size: 1.5rem;
+
+    font-weight: 400;
+
+    color: #1a1a1a;
+
+    margin-top: 0px;
+
+}
+
+
+
+.imageContainer {
+
+    width: 200px;
+
+    height: 200px;
+
+    background-color: #2a3c2a;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    border: none;
+
+    padding: 0;
+
+}
+
+
+
+.mealImg {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.orderBtn {
+    margin-top: 140px; 
+    display: block;
+    font-size: 2.6rem;
+    margin: 6rem auto;
+    background-color: #445943;
+    color: white;
+    padding: 2.2rem 3.9rem; 
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, opacity 0.3s ease;
+}
+
+
+.orderBtn:hover {
+    transform: scale(1.05);
+    background-color: #cf3d10;
+}
+
+
+.fadeOut .orderBtn {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .header {
+        margin-bottom: 6rem;
+        padding: 0 2rem;
+    }
+
+    .header h1 {
+        font-size: 3.6rem;
+    }
+
+    .header p {
+        font-size: 1.15rem;
+    }
+
+    .blobGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem 2rem;
+        max-width: 760px;
+        margin-top: 4rem;
+    }
+
+    .blob {
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto;
+        height: 140px;
+        font-size: 1.1rem;
+        padding: 1.5rem;
+    }
+
+    .menuSection {
+        padding: 0 4%;
+        margin-top: 120px;
+    }
+
+    .mainTitle {
+        font-size: 3.3rem;
+    }
+
+    .categoryName {
+        font-size: 1.5rem;
+    }
+
+    .mealTitle {
+        font-size: 1.3rem;
+    }
+
+    .imageContainer {
+        width: 170px;
+        height: 170px;
+    }
+
+    .orderBtn {
+        font-size: 2rem;
+        padding: 1.7rem 3rem;
+        margin: 5rem auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        min-height: 20vh;
+    }
+
+    .header {
+        margin-bottom: 5rem;
+        padding: 0 1.5rem;
+    }
+
+    .header h1 {
+        font-size: 2.8rem;
+        line-height: 1.1;
+    }
+
+    .header p {
+        font-size: 1.05rem;
+    }
+
+    .blobGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem 1.25rem;
+        margin-top: 3rem;
+        max-width: 720px;
+    }
+
+    .blob {
+        width: 100%;
+        max-width: 240px;
+        height: 135px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        padding: 1.25rem;
+    }
+
+    .menuSection {
+        padding: 0 1.5rem;
+        margin-top: 100px;
+    }
+
+    .mainTitle {
+        font-size: 2.7rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .categoryName {
+        font-size: 1.35rem;
+        letter-spacing: 1px;
+        margin-top: 3rem;
+    }
+
+    .mealRow {
+        gap: 1.25rem;
+        padding: 1.5rem 0;
+    }
+
+    .mealTitle {
+        font-size: 1.15rem;
+        font-weight: 525px;
+    }
+
+    .imageContainer {
+        width: 150px;
+        height: 150px;
+        flex-shrink: 0;
+    }
+
+    .orderBtn {
+        font-size: 1.8rem;
+        padding: 1.4rem 2.5rem;
+        margin: 4.5rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin-bottom: 4rem;
+        padding: 0 1rem;
+    }
+
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .header p {
+        font-size: 0.95rem;
+    }
+
+    .blobGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2.5rem;
+        max-width: 320px;
+    }
+
+    .blob {
+        max-width: 100%;
+        height: 120px;
+        font-size: 0.95rem;
+        padding: 1rem;
+    }
+
+    .menuSection {
+        padding: 0 1rem;
+        margin-top: 80px;
+    }
+
+    .mainTitle {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .categoryName {
+        font-size: 1.15rem;
+        margin-top: 2.25rem;
+    }
+
+    .mealRow {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .mealTitle {
+        font-size: 1.15rem;
+        font-weight: 525px;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        padding: 0;
+        background-color: transparent;
+        overflow: visible;
+    }
+
+    .mealImg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+        border-radius: 5%;
+    }
+
+    .orderBtn {
+        width: min(100%, 280px);
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+        margin: 3rem auto;
+    }
+}

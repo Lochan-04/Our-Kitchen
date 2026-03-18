@@ -1,0 +1,226 @@
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+.card {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 3rem 1.5rem;
+    border: 1px solid black;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backface-visibility: hidden;
+    will-change: transform;
+    
+}
+
+
+.card:nth-child(even):hover {
+    transform: rotate(3deg) translateY(-5px);
+}
+
+
+.card:nth-child(odd):hover {
+    transform: rotate(-3deg) translateY(-5px);
+}
+
+
+.card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.card h3 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 0.5rem;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 1.5rem ;
+
+}
+
+.card p {
+    color: #5d5d5c;
+    font-size: 1.1rem !important;
+    font-family: Helvetica;
+}
+
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    padding-inline: 1rem;
+}
+
+.sectionHeader h2 {
+    color: black;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 2px;
+    font-family:  Helvetica;
+    font-weight: normal;
+
+
+}
+
+.sectionHeader p {
+    color: rgb(46, 45, 45);
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+
+.menuButton {
+    background-color: #cae5f7;
+    color: black;
+    font-size: 1.3rem;
+    font-family: Helvetica, sans-serif;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 50px;
+    margin: 100px 50px;
+    align-self: center;
+}
+
+.mobileMenuButton {
+    display: none;
+}
+
+.menuButton:hover {
+    background-color: #b54618;
+    color: white;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .cardsContainer {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .card {
+        width: min(280px, calc(50% - 1rem));
+        padding: 2.5rem 1.25rem;
+    }
+
+    .sectionHeader {
+        margin-bottom: 3rem;
+        padding-top: 1.5rem;
+    }
+
+    .sectionHeader h2 {
+        font-size: 3rem;
+    }
+
+    .sectionHeader p {
+        font-size: 1.3rem;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .desktopMenuButton {
+        display: none;
+    }
+
+    .mobileMenuButton {
+        display: inline-block;
+    }
+
+    .menuButton {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+        margin: 2rem auto 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardsContainer {
+        gap: 1.25rem;
+        padding: 1rem;
+    }
+
+    .card {
+        width: min(100%, 320px);
+    }
+
+    .card h3 {
+        font-size: 1.35rem;
+    }
+
+    .card p {
+        font-size: 1rem !important;
+    }
+
+    .sectionHeader h2 {
+        font-size: 2.5rem;
+    }
+
+    .sectionHeader p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .menuButton {
+        padding: 0.95rem 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardsContainer {
+        padding: 0.75rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .card img {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 1.2rem;
+    }
+
+    .sectionHeader {
+        margin-bottom: 2.5rem;
+        padding-inline: 0.75rem;
+    }
+
+    .sectionHeader h2 {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .sectionHeader p {
+        font-size: 1rem;
+    }
+
+    .menuButton {
+        width: min(100%, 260px);
+        padding: 0.9rem 1.5rem;
+        font-size: 1rem;
+    }
+}

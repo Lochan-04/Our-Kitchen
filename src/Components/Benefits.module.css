@@ -1,0 +1,157 @@
+.benefitsSection {
+    padding: 6rem 5%;
+    text-align: center;
+    background-color: #ffffff; 
+}
+
+.title {
+    font-size: 4.2rem;
+    color: #2a2a2a;
+    font-weight: 300; 
+    line-height: 1.2;
+    margin-bottom: 4rem;
+    font-family: 'Helvetica', sans-serif;
+}
+
+
+.blobContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap; 
+}
+
+
+.blob {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    transition: transform 0.3s ease;
+}
+
+
+.blob:hover {
+    transform: translateY(-10px);
+}
+
+
+.blobGreen {
+    background-color: #445943;
+    color: white;
+   
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+
+
+.blobBlue {
+    background-color: #cce7f7;
+    color: #1a1a1a;
+    border-radius: 50% 50% 40% 60% / 60% 40% 50% 50%;
+}
+
+
+.blobTan {
+    background-color: #c4b6a6;
+    color: #1a1a1a;
+    border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+    width: 250px; 
+    height: 200px;
+}
+
+
+.blobRed {
+    background-color: #cf3d10;
+    color: white;
+    border-radius: 60% 40% 50% 50% / 40% 60% 50% 40%;
+}
+
+@media (max-width: 1024px) {
+    .benefitsSection {
+        padding: 5rem 4%;
+    }
+
+    .title {
+        font-size: 3.4rem;
+        margin-bottom: 3rem;
+    }
+
+    .blobContainer {
+        gap: 2rem;
+    }
+
+    .blob {
+        width: 190px;
+        height: 190px;
+        padding: 1.5rem;
+        font-size: 1.05rem;
+    }
+
+    .blobTan {
+        width: 220px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefitsSection {
+        padding: 4rem 1.5rem;
+    }
+
+    .title {
+        font-size: 2.7rem;
+        line-height: 1.15;
+        margin-bottom: 2.5rem;
+    }
+
+    .blobContainer {
+        gap: 1.5rem;
+    }
+
+    .blob {
+        width: min(220px, 44vw);
+        height: min(220px, 44vw);
+        padding: 1.25rem;
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
+        line-height: 1.35;
+    }
+
+    .blobTan {
+        width: min(240px, 50vw);
+        height: min(190px, 40vw);
+    }
+}
+
+@media (max-width: 480px) {
+    .benefitsSection {
+        padding: 3rem 1rem;
+    }
+
+    .title {
+        font-size: 2.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .blobContainer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .blob,
+    .blobTan {
+        width: min(100%, 280px);
+        height: 180px;
+        padding: 1.25rem 1rem;
+        font-size: 0.95rem;
+    }
+}

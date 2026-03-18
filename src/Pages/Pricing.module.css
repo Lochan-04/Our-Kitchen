@@ -1,0 +1,193 @@
+.pricingSection {
+    padding: 6rem 8%;
+    background-color: #fdfdfc;
+    text-align: center;
+}
+
+.mainTitle {
+    margin-top: 150px;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    color: #1a1a1a;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 450px); 
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.card {
+    background-color: #445943; 
+    border-radius: 40px;
+    padding: 4rem 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planType {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.priceContainer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.currency {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 5px;
+    font-style: italic;
+}
+
+.amount {
+    font-size: 7rem; 
+    font-family: 'Times New Roman', serif; 
+    font-weight: 400;
+    line-height: 1;
+}
+
+.interval {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.selectBtn {
+    background-color: white;
+    color: #445943;
+    border: none;
+    padding: 1rem 4.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.selectBtn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .pricingSection {
+        padding: 5rem 5%;
+    }
+
+    .mainTitle {
+        margin-top: 120px;
+        font-size: 3.3rem;
+        margin-bottom: 3rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.75rem;
+    }
+
+    .card {
+        padding: 3.2rem 1.5rem;
+        border-radius: 32px;
+    }
+
+    .planType {
+        font-size: 1.5rem;
+    }
+
+    .amount {
+        font-size: 5.8rem;
+    }
+
+    .selectBtn {
+        padding: 0.95rem 3.5rem;
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricingSection {
+        padding: 4rem 1.5rem;
+    }
+
+    .mainTitle {
+        margin-top: 90px;
+        font-size: 2.6rem;
+        line-height: 1.15;
+        margin-bottom: 2.5rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 2.75rem 1.35rem;
+    }
+
+    .planType {
+        font-size: 1.35rem;
+        margin-bottom: 1rem;
+    }
+
+    .currency {
+        font-size: 1.2rem;
+        margin-top: 0.8rem;
+    }
+
+    .amount {
+        font-size: 4.8rem;
+    }
+
+    .interval {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricingSection {
+        padding: 3rem 1rem;
+    }
+
+    .mainTitle {
+        margin-top: 70px;
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 2.25rem 1rem;
+        border-radius: 24px;
+    }
+
+    .planType {
+        font-size: 1.15rem;
+        letter-spacing: 0.5px;
+    }
+
+    .amount {
+        font-size: 4rem;
+    }
+
+    .interval {
+        font-size: 0.92rem;
+    }
+
+    .selectBtn {
+        width: 100%;
+        max-width: 220px;
+        padding: 0.9rem 1.25rem;
+        font-size: 1rem;
+    }
+}
