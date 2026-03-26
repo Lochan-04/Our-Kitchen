@@ -98,7 +98,7 @@
     }
 
     .getStartedBtn {
-        top: 54%;
+        top: 40%;
         width: calc(100% - 4rem);
         max-width: 240px;
         padding: 0.9rem 1.5rem;
